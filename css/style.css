@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
+* {
+    font-family: "roboto", sans-serif;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* ---------------- Colors ---------------- */
+
+.bg-color-heading {
+    background-color: antiquewhite;
+}
+
+.ui-menu-color-home {
+    background-color: crimson;
+}
+
+.ui-menu-color-resume {
+    background-color: aqua;
+}
+
+.ui-menu-color-contact {
+    background-color: chartreuse;
+}
+
+.ui-menu-color-download {
+    background-color: yellow;
+}
+
+/* ---------------- Heading ---------------- */
+
 .logo {
     background-image: url(../images/photo.jpg);
     background-position: center;
@@ -11,16 +41,11 @@
     -webkit-transition: all .5s ease-in-out;
 }
 
-.bg-color-heading {
-    background-color: antiquewhite;
-}
-
 .heading {
     margin: 10px;
 }
 
 .name {
-    font-family: "roboto", sans-serif;
     font-size: 48pt;
     font-weight: 300;
     color: #684b04;
@@ -34,4 +59,17 @@
     font-weight: 100;
     padding: 5px;
     margin-bottom: 20px;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menucontainer {
+    font-size: 0;
+}
+
+#nav li {
+    font-size: 14pt;
+    padding: 0;
 }
