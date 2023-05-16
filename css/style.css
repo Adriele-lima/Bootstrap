@@ -1,7 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
+
 .logo {
     background-image: url(../images/photo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.bg-color-heading {
+    background-color: antiquewhite;
+}
+
+.heading {
+    margin: 10px;
+}
+
+.name {
+    font-family: "roboto", sans-serif;
+    font-size: 48pt;
+    font-weight: 300;
+    color: #684b04;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.title {
+    font-family: "roboto", sans-serif;
+    color: #281d01;
+    font-weight: 100;
+    padding: 5px;
+    margin-bottom: 20px;
 }
