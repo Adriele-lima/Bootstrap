@@ -13,7 +13,7 @@
 }
 
 .ui-menu-color-home {
-    background-color: crimson;
+    background-color: #ff0184;
 }
 
 .ui-menu-color-resume {
@@ -72,4 +72,28 @@
 #nav li {
     font-size: 14pt;
     padding: 0;
+}
+
+.menu-item {
+    height: 180px;
+    text-align: center;
+}
+
+.menu-item a {
+    text-align: center;
+    color: #402100;
+}
+
+.menu-item i {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.menu-item span {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    padding-top: 5px;
 }
