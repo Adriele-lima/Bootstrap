@@ -13,19 +13,19 @@
 }
 
 .ui-menu-color-home {
-    background-color: #ff0184;
+    background-color: #dd4d98;
 }
 
 .ui-menu-color-resume {
-    background-color: aqua;
+    background-color: rgb(41, 197, 197);
 }
 
 .ui-menu-color-contact {
-    background-color: chartreuse;
+    background-color: rgb(137, 202, 71);
 }
 
 .ui-menu-color-download {
-    background-color: yellow;
+    background-color: rgb(233, 233, 98);
 }
 
 /* ---------------- Heading ---------------- */
@@ -103,10 +103,24 @@
     padding-top: 5px;
 }
 
-/* ---------------- Hover ---------------- */
-
 .hvr-sweep-to-bottom:before {
     background-color: rgba(0, 0, 0, 0.2)
+}
+
+/* ---------------- Section ---------------- */
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+    margin: 20px;
+}
+
+.section-heading {
+    color: #281d01;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 40px;
 }
 
 /* ---------------- Footer ---------------- */
