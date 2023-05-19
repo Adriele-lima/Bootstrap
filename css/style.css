@@ -20,6 +20,11 @@
     background-color: rgb(41, 197, 197);
 }
 
+.bg-personal-details {
+    background-color: antiquewhite;
+    padding-bottom: 40px;
+}
+
 .ui-menu-color-contact {
     background-color: rgb(137, 202, 71);
 }
@@ -113,7 +118,6 @@
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
-    margin: 20px;
 }
 
 .section-heading {
@@ -121,6 +125,10 @@
     margin-top: 25px;
     margin-bottom: 40px;
     font-size: 40px;
+}
+
+.about-me {
+    padding-top: 20px;
 }
 
 /* ---------------- Footer ---------------- */
