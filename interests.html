@@ -49,48 +49,88 @@
         </div>
     </header>
     <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 bg-personal-details min-height">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="section-heading">Personal Details</h3>
+        <div class="row">
+            <div class="col-md-4 bg-color-conferences section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Conferences And Meetups Attended
+                        </h3>
+                    </div>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="col-md-8 bg-color-groups">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Groups And Societies</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Coding Grace</h4>
+                                <p>
+                                    Coding Grace are a group of developers based in Ireland who love to code and do other geeky and not necessarily crafty activities. Some of us code full-time, or just for fun (or both). We have people who are part of other technical user groups such as
+                                    Dublin ALT.NET, GameCraft, Python Ireland, Ruby Ireland and more.
+                                    <a href="https://codinggrace.com/" target="_blank">Coding Grace</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h4>Name:</h4>
-                            <p>Adriele Pinto Teodoro de Lima</p>
-                            <h4>Phone:</h4>
-                            <p>+353 083 400 95 62</p>
-                            <h4>E-mail:</h4>
-                            <p>adriele.p.t@hotmail.coma</p>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Django Girls</h4>
+                                <p>
+                                    Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing
+                                    to bring more amazing women into the world of technology.
+                                    <a href="https://djangogirls.org/" target="_blank">Django Girls</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Full Stack NY</h4>
+                                <p>
+                                    Our meetup is an event where web designers and developers can come together to learn from and teach each other about emerging technologies. While speakers at Full Stack focus primarily on angularjs, react, node, hapiJS, espress, plain ole' JavaScript,
+                                    HTML, and CSS, we encourage all local web professionals to join us for vivid discussions around technology across the stack in any language.
+                                    <a href="https://www.meetup.com/javascript-full-stack-development/" target="_blank">Full Stack NY</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">IoT Nation</h4>
+                                <p>
+                                    IoT Nation's mission is to inspire, engage, and connect entrepreneurs, investors, professionals, & enthusiasts worldwide who are active in the Internet of Things (IoT). This group is for professionals and enthusiasts in the Internet of Things. We welcome
+                                    those who want to learn about this emerging field which is fascinating as IoT makes use of a diverse range of technologies and has the promise to impact a vast number of vertical markets.
+                                    <a href="https://www.meetup.com/NYCIOT/" target="_blank">IoT Nation</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 bg-color-three-reasons section-column">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="section-heading">About Me</h3>
-                        </div>
-                    </div>
-                    <div class="row about-me">
-                        <div class="col-md-4 col-sm-12">
-                            <h4>What do I do?</h4>
-                            <p>I'm a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every project.</p>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <h4>How do I do it?</h4>
-                            <p>I follow form as well as function. I know that the aesthetics of effective design combined with application speed, security and reliability combine to create a great user experience.</p>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <h4>Why hire me?</h4>
-                            <p>I work quickly and effectively in getting things built and working across the stack. I'm an excellent communicator who thrives in bright and enthusiastic teams and I'm also a self starter when working solo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>       
+            </div>
         </div>
+    </section>
     </section>
     <footer>
         <div id="footer-details" class="row">
@@ -136,5 +176,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+            });
+        }
+
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIBQWma4SESX2uAtA6wmMPy6mzIcMS3hI&callback=initMap"></script>
 </body>
 </html>
